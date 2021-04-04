@@ -4,7 +4,7 @@ const passport = require("passport")
 router.get ("/discord" , passport.authenticate("discord"))
 
 router.get("/discord/redirect" , passport.authenticate("discord") , (req,res) => {
-    res.redirect(`${process.env.domain}/menu`)
+    res.redirect(`https://grondlebot.virgelroot.repl.co/menu`)
 })
 
 router.get("/" , (req , res) => {

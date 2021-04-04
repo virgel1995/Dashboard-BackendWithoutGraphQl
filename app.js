@@ -14,7 +14,7 @@ const cors = require("cors")
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use(cors({ origin: [process.env.Domain], credentials: true}))
+app.use(cors({ origin: ["https://grondlebot.virgelroot.repl.co"], credentials: true}))
 // { origin: [process.env.Domain], credentials: true})
 app.use(session({
   secret: 'secret',
